@@ -1,0 +1,295 @@
+:root {
+  --division: 2;
+  --prevWidth: calc(1920px / var(--division));
+  --prevHeight: calc(1080px / var(--division));
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  /* width: var(--prevWidth); */
+}
+
+h2{
+  margin:0;
+}
+
+.formsContainer {
+  display: flex;
+  flex-direction: row;
+  margin:0 auto;
+  max-width:99%;
+  /* justify-content: center; */
+  overflow-x: scroll;
+}
+
+.card {
+  max-width: 220px;
+  /* max-width:8%; */
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 1px;
+  min-width:100px;
+  width:150px;
+  max-width:200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputCard > .mainCardButtons *{
+  height:20px;
+  margin:2px;
+}
+
+.inputCard > .positionGroup {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* padding: 10px; */
+}
+
+.inputCard {
+  opacity: 1;
+}
+input[type="number"]{
+  width:90%;
+  min-width:80%;
+  max-width:99%;
+  margin:0 auto 4px;
+}
+
+.activeButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f2;
+  box-shadow: 0 2px 8px 0 rgba(49, 49, 49, 0.112), 0 2px 8px rgba(49, 49, 49, 0.076);
+  border: 1px solid #ccc;
+}
+
+.mainCardButtons {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainCardButtons > button:hover {
+  background-color: #ffce89;
+  box-shadow: 0 2px 8px 0 rgba(49, 49, 49, 0.112), 0 2px 8px rgba(49, 49, 49, 0.076);
+  cursor: pointer;
+}
+
+#exportButton {
+  background-color: rgb(81, 107, 167);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  width: 5em;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px 0 rgba(49, 49, 49, 0.112), 0 2px 8px rgba(49, 49, 49, 0.076);
+  transition: all 0.3s ease-in-out;
+}
+
+#exportButton:hover {
+  background-color: rgb(117, 156, 193);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-width:100px; */
+  /* width: 25px; */
+  height: auto;
+  /* border-radius: 50%; */
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f2;
+  box-shadow: 0 2px 8px 0 rgba(49, 49, 49, 0.112), 0 2px 8px rgba(49, 49, 49, 0.076);
+  border: 1px solid #ccc;
+}
+
+.inputCard > div > input {
+  border: solid rgb(137, 143, 155);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  width: 100%;
+  height: 83px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.scalingButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.inputCard {
+  display:flex;
+}
+
+.increaseSize {
+  text-align: center;
+  font-size: large;
+}
+
+.decreaseSize {
+  text-align: center;
+  font-size: large;
+}
+
+.inputCard > div > button {
+  border: solid rgb(137, 143, 155);
+  border-radius: 10px;
+  background-color: rgb(137, 143, 155);
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.inputCard > div > button:hover {
+  border-radius: 10px;
+  border: solid rgb(213, 181, 139);
+  background-color: rgb(213, 181, 139);
+}
+
+.submitButton {
+  border: solid rgb(147, 173, 214);
+  border-radius: 10px;
+  background-color: rgb(147, 173, 214);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+  margin-top: 20px!important;
+  width: 208px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.element1 {
+  opacity: 1;
+}
+
+.element2 {
+  opacity: 1;
+}
+
+.element3 {
+  opacity: 1;
+}
+
+.element4 {
+  opacity: 1;
+}
+
+.submitButton:hover {
+  border-radius: 10px;
+  border: solid rgb(213, 143, 108);
+  background-color: rgb(213, 143, 108);
+}
+
+.previewWindow {
+  width: var(--prevWidth);
+  height: var(--prevHeight);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow:hidden;
+  position:absolute;
+}
+.previewWindowWrapper{
+  width: var(--prevWidth);
+  height: var(--prevHeight);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow:hidden;
+  position:relative;
+}
+
+.previewElement {
+  display: flex;
+  position: absolute;
+  margin-left: calc(width - 1920px);
+  background-color:rgba(208, 208, 208, 0.434);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  color:rgba(17, 17, 17, 0.523);
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden{
+  background:lightyellow;
+}
